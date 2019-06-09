@@ -10,17 +10,15 @@ const PurpleSlide = ({ number, history }) => {
   return (
     <>
       {number === 3 ? (
-        <Link to={number !== 10 ? `/slide/${number + 1}` : "/sumate"}>
-          <Wrapper>
-            <img
-              alt="mano"
-              className="hand"
-              src={require("D:/GHM/form/sumate-final/src/assets/images/svg/mano.svg")}
-            />
-            <h1>Hola</h1>
-            <p>Estas interactuando con Anchipurac.</p>
-          </Wrapper>
-        </Link>
+        <Wrapper>
+          <img
+            alt="mano"
+            className="hand"
+            src={require("D:/GHM/form/sumate-final/src/assets/images/svg/mano.svg")}
+          />
+          <h1>Hola</h1>
+          <p>Estas interactuando con Anchipurac.</p>
+        </Wrapper>
       ) : null}
       {number === 4 ? (
         <Wrapper>
