@@ -11,9 +11,9 @@ import Eight from "../../pages/Eight";
 import Ten from "../../pages/Ten";
 import Nine from "../../pages/Nine";
 const App = () => (
-  <>
+  <div className="app">
     <Router>
-      <Route path="/" exact component={One} />
+      <Route path="/sumate/" exact component={One} />
       <Route path="/slide/2" component={Two} />
       <Route path="/slide/3" component={Three} />
       <Route path="/slide/4" component={Four} />
@@ -24,7 +24,7 @@ const App = () => (
       <Route path="/slide/9" component={Nine} />
       <Route path="/slide/10" component={Ten} />
     </Router>
-  </>
+  </div>
 );
 
 export default App;

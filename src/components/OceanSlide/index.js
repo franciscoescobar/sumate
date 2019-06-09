@@ -1,46 +1,51 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, withRouter } from "react-router-dom";
 import {
   Wrapper,
   Video,
   ImageWrapper,
-  ButtonImage,
   LogoImage,
-  SumateImage
+  SumateImage,
+  StyledSwitch
 } from "./styled";
-const OceanSlide = ({ one }) => (
-  <Wrapper>
-    <Video loop autoPlay>
-      <source
-        src={require("D:/GHM/form/sumate-final/src/assets/videos/ocean.mp4")}
-        type="video/mp4"
-      />
-      Your browser does not support the video tag.
-    </Video>
-    {one ? (
-      <ImageWrapper>
-        <LogoImage
-          alt="foto"
-          src={require("D:/GHM/form/sumate-final/src/assets/images/svg/logo.svg")}
+const OceanSlide = ({ one, history }) => {
+  const [checked, setChecked] = useState(false);
+  const handleSwitch = () => {
+    setChecked(!checked);
+    window.setTimeout(() => {
+      history.push("/slide/2");
+    }, 500);
+  };
+  return (
+    <Wrapper>
+      <Video loop autoPlay>
+        <source
+          src={require("D:/GHM/form/sumate-final/src/assets/videos/ocean.mp4")}
+          type="video/mp4"
         />
-        <Link to="/slide/2">
-          <ButtonImage
+        Your browser does not support the video tag.
+      </Video>
+      {one ? (
+        <ImageWrapper>
+          <LogoImage
             alt="foto"
-            src={require("D:/GHM/form/sumate-final/src/assets/images/svg/boton.svg")}
+            src={require("D:/GHM/form/sumate-final/src/assets/images/svg/logo.svg")}
           />
-        </Link>
-      </ImageWrapper>
-    ) : (
-      <ImageWrapper>
-        <Link to="/slide/3">
-          <SumateImage
-            alt="foto"
-            src={require("D:/GHM/form/sumate-final/src/assets/images/svg/sumate.svg")}
-          />
-        </Link>
-      </ImageWrapper>
-    )}
-  </Wrapper>
-);
 
-export default OceanSlide;
+          <StyledSwitch checked={checked} onChange={handleSwitch} />
+        </ImageWrapper>
+      ) : (
+        <ImageWrapper>
+          <Link to="/slide/3">
+            <SumateImage
+              alt="foto"
+              src={require("D:/GHM/form/sumate-final/src/assets/images/svg/sumate.svg")}
+            />
+          </Link>
+        </ImageWrapper>
+      )}
+    </Wrapper>
+  );
+};
+
+export default withRouter(OceanSlide);

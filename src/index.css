@@ -4,7 +4,7 @@ html {
   margin: 0;
   height: 100vh;
   overflow: hidden;
-  font-family: Roboto;
+  font-family: Lato, Roboto;
 }
 #root {
   height: 100vh;
@@ -12,4 +12,7 @@ html {
 a {
   text-decoration: none;
   color: inherit;
+}
+.app {
+  height: 100vh;
 }

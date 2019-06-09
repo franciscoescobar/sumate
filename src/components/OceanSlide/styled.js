@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Switch from "react-ios-switch";
+
 export const Wrapper = styled.div`
   display: flex;
   height: 100%;
@@ -23,13 +25,28 @@ export const ImageWrapper = styled.div`
 export const LogoImage = styled.img`
   height: 20rem;
   width: 20rem;
+  @media (max-width: 700px) {
+    height: 10rem;
+    width: 10rem;
+  }
 `;
 export const ButtonImage = styled.img`
   margin-top: 7rem;
   height: 7rem;
   width: 7rem;
+  @media (max-width: 700px) {
+    height: 5rem;
+    width: 5rem;
+  }
 `;
 export const SumateImage = styled.img`
   height: 65rem;
   width: 65rem;
+  @media (max-width: 700px) {
+    height: 30rem;
+    width: 30rem;
+  }
+`;
+export const StyledSwitch = styled(Switch)`
+  margin-top: 30px;
 `;

@@ -1,12 +1,14 @@
 {
-  "name": "sumate-final",
+  "name": "sumate",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "pretty-checkbox": "^3.0.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-drawable-canvas": "^1.1.1",
+    "react-ios-switch": "^0.1.19",
     "react-scripts": "3.0.1"
   },
   "scripts": {
@@ -32,5 +34,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://franciscoescobar.github.io/sumate-final/"
+  "homepage": "https://franciscoescobar.github.io/sumate/"
 }
