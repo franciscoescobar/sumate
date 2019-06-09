@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sumate/static/css/main.0ed5b186.chunk.css",
-    "main.js": "/sumate/static/js/main.c6e298ed.chunk.js",
-    "main.js.map": "/sumate/static/js/main.c6e298ed.chunk.js.map",
+    "main.js": "/sumate/static/js/main.78f6281d.chunk.js",
+    "main.js.map": "/sumate/static/js/main.78f6281d.chunk.js.map",
     "runtime~main.js": "/sumate/static/js/runtime~main.31c791c9.js",
     "runtime~main.js.map": "/sumate/static/js/runtime~main.31c791c9.js.map",
     "static/js/2.2ca17de4.chunk.js": "/sumate/static/js/2.2ca17de4.chunk.js",
     "static/js/2.2ca17de4.chunk.js.map": "/sumate/static/js/2.2ca17de4.chunk.js.map",
     "index.html": "/sumate/index.html",
-    "precache-manifest.1707abcd3507eae5708d5ee50677ebd8.js": "/sumate/precache-manifest.1707abcd3507eae5708d5ee50677ebd8.js",
+    "precache-manifest.f60fb3b9360fc4e6d9e43eadc0d05c4d.js": "/sumate/precache-manifest.f60fb3b9360fc4e6d9e43eadc0d05c4d.js",
     "service-worker.js": "/sumate/service-worker.js",
     "static/css/main.0ed5b186.chunk.css.map": "/sumate/static/css/main.0ed5b186.chunk.css.map",
     "static/media/boton.svg": "/sumate/static/media/boton.be110202.svg",
