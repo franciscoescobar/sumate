@@ -1,27 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dbbbcecfacb36888203b91322af17ca3",
+    "revision": "c43da4cd20c8d0549742f43ee41b8890",
     "url": "/sumate/index.html"
   },
   {
-    "revision": "688f95a7605c375ff8f1",
-    "url": "/sumate/static/css/main.0ed5b186.chunk.css"
+    "revision": "ccfd94ff868770773ac3",
+    "url": "/sumate/static/css/main.b64e2bcb.chunk.css"
   },
   {
-    "revision": "1bc60b81115d0e9eaa6a",
-    "url": "/sumate/static/js/2.2ca17de4.chunk.js"
+    "revision": "ea22dcaa22a105749ba7",
+    "url": "/sumate/static/js/2.8687229b.chunk.js"
   },
   {
-    "revision": "688f95a7605c375ff8f1",
-    "url": "/sumate/static/js/main.61e0fd81.chunk.js"
+    "revision": "ccfd94ff868770773ac3",
+    "url": "/sumate/static/js/main.704d95c9.chunk.js"
   },
   {
     "revision": "95be83bf82852eb30d73",
     "url": "/sumate/static/js/runtime~main.31c791c9.js"
-  },
-  {
-    "revision": "be110202da1b7b632416a9afdaa53ad0",
-    "url": "/sumate/static/media/boton.be110202.svg"
   },
   {
     "revision": "b90fd6362e8dad9b690f7ef05b53ccbb",
