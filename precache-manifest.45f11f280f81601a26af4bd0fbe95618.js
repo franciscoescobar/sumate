@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e650791b3eb5902b53b98d997d3c0ff0",
+    "revision": "66acf8c60a0757a7ae3031b707b98583",
     "url": "/sumate/index.html"
   },
   {
-    "revision": "14c2ad4351fad0408040",
+    "revision": "47932fb374ffb45ccf89",
     "url": "/sumate/static/css/main.80150447.chunk.css"
   },
   {
-    "revision": "74962c041a9dcae19bc8",
-    "url": "/sumate/static/js/2.8086cf6f.chunk.js"
+    "revision": "4cdf328791da6307103c",
+    "url": "/sumate/static/js/2.403a3a4b.chunk.js"
   },
   {
-    "revision": "14c2ad4351fad0408040",
-    "url": "/sumate/static/js/main.f4a7c820.chunk.js"
+    "revision": "47932fb374ffb45ccf89",
+    "url": "/sumate/static/js/main.d8c43c33.chunk.js"
   },
   {
     "revision": "95be83bf82852eb30d73",
     "url": "/sumate/static/js/runtime~main.31c791c9.js"
+  },
+  {
+    "revision": "6a45e5de2c8d8cc1e07abf252ef52fa6",
+    "url": "/sumate/static/media/AGUA-SUMATE.6a45e5de.jpg"
   },
   {
     "revision": "b90fd6362e8dad9b690f7ef05b53ccbb",
