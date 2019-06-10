@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   }
 `;
 export const Video = styled.video`
-  position: absolute;
+  position: fixed;
   z-index: -1;
 `;
 export const ImageWrapper = styled.div`

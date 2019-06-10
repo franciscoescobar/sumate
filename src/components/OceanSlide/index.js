@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import {
   Wrapper,
   Video,
@@ -13,12 +13,18 @@ const OceanSlide = ({ one, history }) => {
   const handleSwitch = () => {
     setChecked(!checked);
     window.setTimeout(() => {
+      document.body.requestFullscreen();
       history.push("/slide/2");
     }, 500);
   };
+  window.setTimeout(() => {
+    if (!one) {
+      history.push("/slide/3");
+    }
+  }, 3000);
   return (
     <Wrapper>
-      <Video loop autoPlay>
+      <Video loop autoPlay playsInline muted>
         <source
           src={require("D:/GHM/form/sumate-final/src/assets/videos/ocean.mp4")}
           type="video/mp4"
@@ -36,12 +42,10 @@ const OceanSlide = ({ one, history }) => {
         </ImageWrapper>
       ) : (
         <ImageWrapper>
-          <Link to="/slide/3">
-            <SumateImage
-              alt="foto"
-              src={require("D:/GHM/form/sumate-final/src/assets/images/svg/sumate.svg")}
-            />
-          </Link>
+          <SumateImage
+            alt="foto"
+            src={require("D:/GHM/form/sumate-final/src/assets/images/svg/sumate.svg")}
+          />
         </ImageWrapper>
       )}
     </Wrapper>

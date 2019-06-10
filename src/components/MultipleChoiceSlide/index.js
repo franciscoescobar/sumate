@@ -13,7 +13,15 @@ const MultipleChoiceSlide = ({ number, title, checkboxs, onActiveChange }) => {
       {number !== 8 ? (
         <List>
           {checkboxs.map(checkbox => (
-            <li key={checkbox.span}>
+            <li
+              key={checkbox.span}
+              className={
+                checkbox.span === "Tu energía hace la diferencia" ||
+                checkbox.span === "Somos naturaleza"
+                  ? "last-item"
+                  : ""
+              }
+            >
               <div
                 name={checkbox.span}
                 className={checkbox.active ? "checkbox active" : "checkbox"}

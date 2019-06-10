@@ -7,8 +7,9 @@ export const Wrapper = styled.div`
   align-items: center;
 
   .canvas {
-    margin: 20px 0;
+    margin: 20px;
     height: 70%;
+    width: 80%;
     border: 1px solid #cbcbcb;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
