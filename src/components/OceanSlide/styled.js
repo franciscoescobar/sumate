@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import Switch from "react-ios-switch";
-
 export const Wrapper = styled.div`
   display: flex;
   height: 100%;
+  z-index: 2;
   justify-content: center;
+  background-size: cover;
   > img {
     height: 120px;
     width: 120px;
@@ -12,7 +13,6 @@ export const Wrapper = styled.div`
 `;
 export const Video = styled.video`
   position: fixed;
-  z-index: -1;
 `;
 export const ImageWrapper = styled.div`
   display: relative;
@@ -20,7 +20,7 @@ export const ImageWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  z-index: 3;
 `;
 export const LogoImage = styled.img`
   height: 20rem;

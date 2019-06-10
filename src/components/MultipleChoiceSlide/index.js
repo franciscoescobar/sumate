@@ -1,12 +1,13 @@
 import React from "react";
-import { Wrapper, List, Dots, Dot, ImageWrapper } from "./styled";
-import { Link } from "react-router-dom";
+import { Wrapper, List, Dots, Dot, ImageWrapper, Arrow } from "./styled";
+import { Link, withRouter } from "react-router-dom";
 const MultipleChoiceSlide = ({
   number,
   title,
   checkboxs,
   onActiveChange,
-  onClearCheckboxes
+  onClearCheckboxes,
+  history
 }) => {
   const handleOnCheckboxClick = name => {
     onActiveChange(name);
@@ -14,11 +15,17 @@ const MultipleChoiceSlide = ({
   const clearCheckboxes = () => {
     onClearCheckboxes();
   };
+  const onArrowClick = () => {
+    const somethingChecked = checkboxs.filter(
+      checkbox => checkbox.active === true
+    );
+    if (somethingChecked.length > 0) {
+      history.push(`/slide/${number + 1}`);
+    }
+  };
   return (
     <Wrapper>
-      <Link to={`/slide/${number + 1}`}>
-        <h1>{title}</h1>
-      </Link>
+      <h1>{title}</h1>
       {number !== 8 ? (
         <List>
           {checkboxs.map(checkbox => (
@@ -53,22 +60,20 @@ const MultipleChoiceSlide = ({
           </p>
         </ImageWrapper>
       )}
+      {number !== 8 && (
+        <Arrow onClick={onArrowClick}>
+          <i class="fas fa-chevron-right" />
+        </Arrow>
+      )}
+
       <Dots>
-        <Link to={`/slide/5`}>
-          <Dot className={number === 5 ? "selected" : ""} />
-        </Link>
-        <Link to={`/slide/6`}>
-          <Dot className={number === 6 ? "selected" : ""} />
-        </Link>
-        <Link to={`/slide/7`}>
-          <Dot className={number === 7 ? "selected" : ""} />
-        </Link>
-        <Link to={`/slide/8`}>
-          <Dot className={number === 8 ? "selected" : ""} />
-        </Link>
+        <Dot className={number === 5 ? "selected" : ""} />
+        <Dot className={number === 6 ? "selected" : ""} />
+        <Dot className={number === 7 ? "selected" : ""} />
+        <Dot className={number === 8 ? "selected" : ""} />
       </Dots>
     </Wrapper>
   );
 };
 
-export default MultipleChoiceSlide;
+export default withRouter(MultipleChoiceSlide);

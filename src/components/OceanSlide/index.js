@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { withRouter } from "react-router-dom";
+import image from "../../assets/images/background/AGUA-SUMATE.jpg";
+
 import {
   Wrapper,
   Video,
@@ -24,7 +26,7 @@ const OceanSlide = ({ one, history }) => {
     }
   }, 3000);
   return (
-    <Wrapper>
+    <Wrapper style={{ background: `url(${image})` }}>
       <Video loop autoPlay playsInline muted>
         <source
           src={require("D:/GHM/form/sumate-final/src/assets/videos/ocean.mp4")}

@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   color: #030303;
-  > * > h1 {
+  > h1 {
     @media (max-width: 700px) {
       font-size: 16px;
     }
@@ -47,12 +47,12 @@ export const List = styled.ul`
     border: 1px solid #747474;
 
     @media (max-width: 1520px) {
-      height: 45px;
-      width: 45px;
-    }
-    @media (max-width: 700px) {
       height: 40px;
       width: 40px;
+    }
+    @media (max-width: 700px) {
+      height: 30px;
+      width: 30px;
     }
   }
   > li > .active {
@@ -72,6 +72,17 @@ export const List = styled.ul`
     }
   }
 `;
+export const Arrow = styled.div`
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+`;
 export const Dots = styled.div`
   display: flex;
   .selected {
@@ -86,12 +97,12 @@ export const Dot = styled.div`
   width: 1rem;
 
   @media (max-width: 1520px) {
-    height: 0.8rem;
-    width: 0.8rem;
+    height: 0.85rem;
+    width: 0.85rem;
   }
   @media (max-width: 700px) {
-    height: 0.5rem;
-    width: 0.5rem;
+    height: 0.7rem;
+    width: 0.7rem;
   }
 `;
 export const ImageWrapper = styled.div`
@@ -106,13 +117,17 @@ export const ImageWrapper = styled.div`
   > * > img {
     height: 10rem;
     width: 10rem;
+    border: 1px solid #cbcbcb;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
     @media (max-width: 700px) {
       height: 5rem;
       width: 5rem;
     }
   }
   > p {
-    margin: 0;
+    margin-top: 3rem;
     font-size: 1.5rem;
     font-weight: 300;
     @media (max-width: 700px) {
