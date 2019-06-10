@@ -47,12 +47,12 @@ export const List = styled.ul`
     border: 1px solid #747474;
 
     @media (max-width: 1520px) {
-      height: 40px;
-      width: 40px;
+      height: 45px;
+      width: 45px;
     }
     @media (max-width: 700px) {
-      height: 30px;
-      width: 30px;
+      height: 40px;
+      width: 40px;
     }
   }
   > li > .active {

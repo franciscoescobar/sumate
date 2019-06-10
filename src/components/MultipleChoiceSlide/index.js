@@ -1,9 +1,18 @@
 import React from "react";
 import { Wrapper, List, Dots, Dot, ImageWrapper } from "./styled";
 import { Link } from "react-router-dom";
-const MultipleChoiceSlide = ({ number, title, checkboxs, onActiveChange }) => {
+const MultipleChoiceSlide = ({
+  number,
+  title,
+  checkboxs,
+  onActiveChange,
+  onClearCheckboxes
+}) => {
   const handleOnCheckboxClick = name => {
     onActiveChange(name);
+  };
+  const clearCheckboxes = () => {
+    onClearCheckboxes();
   };
   return (
     <Wrapper>
@@ -33,7 +42,7 @@ const MultipleChoiceSlide = ({ number, title, checkboxs, onActiveChange }) => {
         </List>
       ) : (
         <ImageWrapper>
-          <Link to={`/slide/${number + 1}`}>
+          <Link to={`/slide/${number + 1}`} onClick={clearCheckboxes}>
             <img
               alt="lapiz"
               src={require("D:/GHM/form/sumate-final/src/assets/images/svg/lapiz.svg")}
@@ -44,7 +53,6 @@ const MultipleChoiceSlide = ({ number, title, checkboxs, onActiveChange }) => {
           </p>
         </ImageWrapper>
       )}
-
       <Dots>
         <Link to={`/slide/5`}>
           <Dot className={number === 5 ? "selected" : ""} />

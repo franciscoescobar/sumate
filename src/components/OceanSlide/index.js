@@ -12,8 +12,9 @@ const OceanSlide = ({ one, history }) => {
   const [checked, setChecked] = useState(false);
   const handleSwitch = () => {
     setChecked(!checked);
+    document.body.requestFullscreen();
+
     window.setTimeout(() => {
-      document.body.requestFullscreen();
       history.push("/slide/2");
     }, 500);
   };

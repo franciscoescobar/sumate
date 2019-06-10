@@ -5,6 +5,8 @@ const PurpleSlide = ({ number, history }) => {
   window.setTimeout(() => {
     if (number === 3) {
       history.push("/slide/4");
+    } else if (number === 10) {
+      history.push("/sumate");
     }
   }, 4000);
   return (
@@ -33,19 +35,17 @@ const PurpleSlide = ({ number, history }) => {
         </Wrapper>
       ) : null}
       {number === 10 ? (
-        <Link to={number !== 10 ? `/slide/${number + 1}` : "/sumate"}>
-          <Wrapper>
-            <img
-              alt="finalizado"
-              src={require("D:/GHM/form/sumate-final/src/assets/images/svg/finalizado.svg")}
-            />
-            <h1>Gracias</h1>
-            <p>
-              Por compartir tu experiencia con Anchipurac. Ahora sos nuestro{" "}
-              <strong>soicio comprometido</strong> con el ciudado del ambiente.
-            </p>
-          </Wrapper>
-        </Link>
+        <Wrapper>
+          <img
+            alt="finalizado"
+            src={require("D:/GHM/form/sumate-final/src/assets/images/svg/finalizado.svg")}
+          />
+          <h1>Gracias</h1>
+          <p>
+            Por compartir tu experiencia con Anchipurac. Ahora sos nuestro{" "}
+            <strong>soicio comprometido</strong> con el ciudado del ambiente.
+          </p>
+        </Wrapper>
       ) : null}
     </>
   );
