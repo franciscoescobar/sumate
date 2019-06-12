@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sumate/static/css/main.5ec08057.chunk.css",
-    "main.js": "/sumate/static/js/main.fb7e7c0d.chunk.js",
-    "main.js.map": "/sumate/static/js/main.fb7e7c0d.chunk.js.map",
+    "main.js": "/sumate/static/js/main.3721c6d0.chunk.js",
+    "main.js.map": "/sumate/static/js/main.3721c6d0.chunk.js.map",
     "runtime~main.js": "/sumate/static/js/runtime~main.31c791c9.js",
     "runtime~main.js.map": "/sumate/static/js/runtime~main.31c791c9.js.map",
-    "static/js/2.403a3a4b.chunk.js": "/sumate/static/js/2.403a3a4b.chunk.js",
-    "static/js/2.403a3a4b.chunk.js.map": "/sumate/static/js/2.403a3a4b.chunk.js.map",
+    "static/js/2.780cc2b4.chunk.js": "/sumate/static/js/2.780cc2b4.chunk.js",
+    "static/js/2.780cc2b4.chunk.js.map": "/sumate/static/js/2.780cc2b4.chunk.js.map",
     "index.html": "/sumate/index.html",
-    "precache-manifest.7279e8f585e00c0cad0e0572573ed0da.js": "/sumate/precache-manifest.7279e8f585e00c0cad0e0572573ed0da.js",
+    "precache-manifest.f97dfeb64cefb4983340c51cb685b5f5.js": "/sumate/precache-manifest.f97dfeb64cefb4983340c51cb685b5f5.js",
     "service-worker.js": "/sumate/service-worker.js",
     "static/css/main.5ec08057.chunk.css.map": "/sumate/static/css/main.5ec08057.chunk.css.map",
     "static/media/AGUA-SUMATE.jpg": "/sumate/static/media/AGUA-SUMATE.6a45e5de.jpg",
@@ -18,7 +18,6 @@
     "static/media/lapiz.svg": "/sumate/static/media/lapiz.1f43d02b.svg",
     "static/media/logo.svg": "/sumate/static/media/logo.8b32ee1c.svg",
     "static/media/mano.svg": "/sumate/static/media/mano.5132af15.svg",
-    "static/media/ocean.mp4": "/sumate/static/media/ocean.f7b31a19.mp4",
     "static/media/sumate.svg": "/sumate/static/media/sumate.921dab27.svg"
   }
 }
