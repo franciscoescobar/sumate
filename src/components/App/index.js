@@ -11,7 +11,7 @@ const App = () => (
   <div className="app">
     <Router>
       <Switch>
-        <Route path="/sumate/" exact component={One} />
+        <Route path="/" exact component={One} />
         <Route path="/slide/2" component={Two} />
         <Route path="/slide/3" component={Three} />
         <Route path="/slide/4" component={Four} />
